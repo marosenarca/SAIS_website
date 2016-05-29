@@ -1,0 +1,30 @@
+{% extends "management/finances.html" %}
+
+{% block tabtitle %}Fianancial Aids{% endblock %}
+
+
+{% block wayfinder %}
+<div>
+  <table width="100%">
+    <tr>
+      <td width="2%"></td>
+      <td width="48%" align="left"><a href="{% url 'management:campus-finances' %}" class="wayfinder" id="current"><i class="glyphicon glyphicon-arrow-left"></i> Back</a></td>
+      <td width="50%" align="right"><a href="#" class="tool" style="margin-right:15px;">? Help</a></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block title %}Fianancial Aids{% endblock %}
+
+{% block body %}
+<h4>
+<ul>
+	<li>View information about your financial aid awards including scheduled disbursements.</li>
+</ul>
+</h4>
+<script type="text/javascript">
+	$('#lg-menu').children().eq(3).addClass('sActive');
+</script>
+{% endblock %}
+

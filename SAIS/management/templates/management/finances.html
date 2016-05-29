@@ -1,0 +1,52 @@
+{% extends "management/base.html" %}
+{% load staticfiles %}
+
+{% block tabtitle %}Campus Finances{% endblock %}
+
+{% block home %}
+  {% include 'management/includes/self-service-drpdwn.html' %}
+{% endblock %}
+
+{% block wayfinder %}
+<div>
+  <table width="100%">
+    <tr>
+      <td width="2%"></td>
+      <td width="48%" align="left"><a href="{% url 'management:index' %}" class="wayfinder">Home</a> > <a href="{% url 'management:campus-finances' %}" class="wayfinder" id="current">Campus Finances</a> > </td>
+      <td width="50%" align="right"><a href="#" class="tool" style="margin-right:15px;">? Help</a></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<ul class="nav">
+  <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+</ul>
+ <ul class="nav hidden-xs" id="lg-menu">
+    <li>
+       <h4 style="color:#2F2727">Campus Finances</h4>
+    </li>
+    <li role="separator" class="divider"></li>
+    <li><a href="{% url 'management:acct-inquiry' %}">Existing Accountabilities</a></li>
+    <li><a href="{% url 'management:financial-aids' %}">Financial Aids</a></li>
+    <li><a href="{% url 'management:payment-plan' %}">Enroll in Payment Plan</a></li>
+</ul>
+<ul class="nav hidden-xs" id="lg-menu">
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{% block title %}<h1  class="content-title">Campus Finances</h1>{% endblock %}</h1>
+            <div>
+            {% block body %}
+            <h3>View your account, make an electronic payment, view and accept your financial aid awards.</h3>
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

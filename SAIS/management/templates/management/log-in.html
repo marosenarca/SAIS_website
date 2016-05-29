@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content = "width=device-width, initial-scale=1.0">
+	{% load staticfiles %}	
+	<title>{% block tabtitle %}Log-in{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'management/css/bootstrap.min.css' %}">
+	<script type="text/javascript" src="{% static 'management/js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'management/js/bootstrap.js' %}"></script>
+	{%block stylesheets%} 
+		<link rel="stylesheet" type="text/css" href="{% static 'management/css/mystyle.css' %}">
+	{% endblock %}
+</head>
+<body>
+	<center>
+		<table width="100%" rules="none" cellpadding="10">
+			<tr align="center" id = "headerbg">
+				<td width="150" align="center">
+					<img src="{% static 'management/img/UP.png' %}" width="70%">
+				</td>
+				<td align="center">
+					<span class = "header">
+						<h3 class="log-in-header">
+							WELCOME TO THE STUDENT ACADEMIC INFORMATION SYSTEM
+						</h3>
+					</span>
+				</td>
+			</tr>
+		</table>
+		<p style="line-height: 200%;">
+			
+		</p>
+		<table style="width: 100%" border="0">
+			<tbody>
+				<tr>
+					<td align="center">
+						<img align="center" src="{% static 'management/img/people-img.png' %}">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<table width="300">
+			<tr>
+				<td>
+					<form method="post">
+						{% csrf_token %}
+						<div class="profile">
+							<div class="profile__form1">
+								<div class="profile__fields1" align="center">
+									<div class="field">
+										<div class="field">
+											<input id="userid" name="username" class="input" type="text" placeholder="User Name">
+										</div>
+										<div class="field">
+											<input type="password" id="pwd" name="password" class="input" placeholder="Password">
+										</div>
+										<button type="submit" class="btn btn-default" id="submit">Submit</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>

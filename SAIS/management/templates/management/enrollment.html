@@ -1,0 +1,52 @@
+{% extends "management/base.html" %}
+{% load staticfiles %}
+
+{% block tabtitle %}Enrollment{% endblock %}
+
+{% block home %}
+  {% include 'management/includes/self-service-drpdwn.html' %}
+{% endblock %}
+
+{% block wayfinder %}
+<div>
+  <table width="100%">
+    <tr>
+      <td width="2%"></td>
+      <td width="48%" align="left"><a href="{% url 'management:index' %}" class="wayfinder">Home</a> > <a href="{% url 'management:profile' %}" class="wayfinder" id="current">Enrollment</a> > </td>
+      <td width="50%" align="right"><a href="#" class="tool" style="margin-right:15px;">? Help</a></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<ul class="nav">
+  <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+</ul>
+ <ul class="nav hidden-xs" id="lg-menu">
+    <li>
+       <h4 style="color:#2F2727">Enrollment</h4>
+    </li>
+    <li role="separator" class="divider"></li>
+    <li><a href="{% url 'management:enrollment-schedule' %}">Enrollment Schedule</a></li>
+    <li><a href="{% url 'management:add-class' %}">Add Class</a></li>
+    <li><a href="{% url 'management:drop-class' %}">Drop Class</a></li>
+</ul>
+<ul class="nav hidden-xs" id="lg-menu">
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{% block title %}<h1  class="content-title">Enrollment</h1>{% endblock %}</h1>
+            <div>
+            {% block body %}
+            <h3>Find classes that match your selection criteria, or browse the course catalog by subject.</h3>
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% block content %}
+
+        <!--A-->
+          	<div>
+          	<br>
+			<div style="padding-left:50px; padding-top:1px; outline: 1px solid darkgrey; background-color:#FAEBEB ">
+				<h5><label>STUDENT INFORMATION:</label></h5>
+			</div>
+          		
+          	  <div style="padding-left:100px;">
+          	  		
+	            <div class="row">
+	          	  <div style="padding-top:15px; padding-bottom:15px; padding-right:15px;">
+	                  <label>Student Type: </label>
+	                      <select id="student-type">
+	                          <option value="null">-------------------------------</option>
+	                          <option value="Crossreg-nonUP">Crossregistrant (from a nonUP unit)</option>
+	                          <option value="Crossreg-UP">Crossregistrant (from UP unit)</option>
+	                          <option value="Non-degree">Non-Degree</option>
+	                          <option value="Regular">Regular</option>
+	                          <option value="Shiftee">Shiftee</option>
+	                          <option value="Special">Special</option>
+	                          <option value="Transferee">Transferee</option>
+	                      </select>
+	              </div>
+	           </div>
+
+	           <div class="row">
+	          	  <div style="padding-top:15px; padding-bottom:15px; padding-right:15px;">
+	                  <label>Registration Status: </label>
+	                      <select id="reg-status">
+	                          <option value="null">-------------------------------</option>
+	                          <option value="Continuing">Continuing</option>
+	                          <option value="New Crossreg/ Non-degree">New Cross Registrant/Non-degree</option>
+	                          <option value="New Doctoral">New Doctoral</option>
+	                          <option value="New Freshman">New Freshman</option>
+	                          <option value="New Master's">New Master's</option>
+	                          <option value="New Transfer (nonUP)">New Transfer (from a nonUP unit)</option>
+	                          <option value="New Transfer (UP)">New Transfer (from a UP unit)</option>
+	                          <option value="Old Returning">Old Returning</option>
+	                      </select>
+	              </div>
+	           </div>
+
+	           <div style="padding-top:15px; padding-bottom:15px; padding-right:15px;">
+	           	  <label style="padding-right:30px;">Year Level: </label>
+                    <label class="radio-inline"><input type="radio" name="optradio"> 1</label>
+					<label class="radio-inline"><input type="radio" name="optradio"> 2</label>
+					<label class="radio-inline"><input type="radio" name="optradio"> 3</label>
+					<label class="radio-inline"><input type="radio" name="optradio"> 4</label>
+	           </div>
+
+          	  </div>
+          	</div>          
+
+{% endblock %}

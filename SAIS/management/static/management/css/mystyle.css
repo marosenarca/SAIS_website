@@ -1,0 +1,1080 @@
+element.style {
+}
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+
+element.style {
+    height: auto;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+div[Attributes Style] {
+    text-align: -webkit-center;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+
+element.style {
+    background-image: url(/ps/OA_HTML/cabo/images/swan/headerBg-red.png);
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+table[Attributes Style] {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    height: 109px;
+    width: 100%;
+    border-spacing: 0px;
+}
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+
+element.style {
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+Inherited from table.x6n
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+
+element.style {
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+Inherited from table.x6n
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+
+element.style {
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+Inherited from table.x6n
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+
+element.style {
+}
+span.header {
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 0 16px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+Inherited from table.x6n
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+
+
+element.style {
+}
+#headerbg{
+  background: #8E0E00;
+  background: -webkit-linear-gradient(to top,#800000, #A43931, #800000);
+  background:    -moz-linear-gradient(to top,#800000, #A43931, #800000);
+  background:         linear-gradient(to top,#800000, #A43931, #800000);
+}
+
+element.style {
+}
+h3 {
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+Inherited from span.header
+span.header {
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 0 16px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+Inherited from table.x6n
+
+element.style {
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+img[Attributes Style] {
+    float: left;
+    vertical-align: top;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+span.tab1 {
+    padding: 0 60px;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.profile {
+    position: relative;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.profile__form1 {
+    position: relative;
+    background: white;
+    opacity: 4s;
+    height: 4s;
+    padding: 3em;
+    border-radius: .25em;
+    filter: drop-shadow(0 0 2em rgba(0,0,0,0.2));
+    -webkit-filter: drop-shadow(0 0 2em rgba(0,0,0,0.2));
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.profile__fields1 {
+    opacity: 12em;
+    transition: opacity 12em cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.field {
+    position: relative;
+    margin-bottom: 2em;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+element.style {
+}
+.profile__footer {
+    padding-top: 1em;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.input {
+    width: 100%;
+    font-size: 80%;
+    border: 0;
+    padding: 0;
+    background-color: white;
+    height: 1.5rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-color: black;
+    color: #777;
+    transition: all .2s ease-in;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+/*.btn {
+    border: 0;
+    font-size: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.5rem;
+    color: white;
+    background: gray;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    letter-spacing: .2em;
+    transition: background .2s;
+}*/
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i] {
+    -webkit-appearance: push-button;
+    -webkit-user-select: none;
+    white-space: pre;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+element.style {
+}
+.profile__footer {
+    padding-top: 1em;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from table
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+Inherited from body
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #777;
+}
+Inherited from html
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+Pseudo ::before element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+a.header1 {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 0px;
+    text-decoration: none;
+}
+
+a.help {
+    text-align: right;
+    color: #8E0E00;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 0px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+div.srch{
+    color: white;
+    background-color: gray;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 12px;
+    color: #777;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #800000;
+}
+
+.hmenu {
+    text-align: center;
+    width: 25%;
+}
+
+.base {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#QA {
+    vertical-align: text-top;
+    text-align: right;
+    color: #8E0E00;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 0px;
+    text-decoration: underline;
+}
+
+a.label {
+    text-align: center;
+    color: #777 ;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 0px;
+    text-decoration: underline;
+}
+
+/*---------------------------------------------*/
+
+#content
+{
+   background-color: #f2f2f2;
+   padding: 10px 10px;
+   overflow: auto;
+}
+#tab-container
+{
+   float: left;
+   margin: 10px 0 0 0;
+   width: 200px;
+}
+#tab-container ul
+{
+   list-style: none;
+   text-align: center;
+}
+#tab-container ul li
+{
+   border-top: 1px solid #666;
+   border-bottom: 1px solid #666;
+   border-left: 8px solid #666;
+   background-color: #ddd;
+   margin: 5px 0;
+}
+#tab-container ul li a,
+#tab-container ul li a:visited
+{
+   text-decoration: none;
+   color: #666;
+   display: block;
+   padding: 12px 5px;
+}
+#tab-container ul li:hover
+{
+   border-left: 8px solid #333;
+}
+#tab-container ul li a:hover
+{
+   color: #000;
+}
+#tab-container ul li.selected
+{
+   border-right: none;
+   background-color: #fff;
+   border-left: 8px solid #006699;
+}
+#main-container
+{
+   width: 80%;
+   min-height: 730px;
+   margin: 0 0 0 190px;
+   padding: 20px;
+   background-color: #fff;
+   border: 1px solid #888;
+}
+
+#container
+{
+    text-align: center;
+   width: 90%;
+   min-height: 450px;
+   margin: 0 0 0 0;
+   padding: 20px;
+   background-color: #fff;
+   border: 3px solid #888;
+   border-right: 10px solid #888;
+   border-left: 10px solid #888;
+}
+
+#grade{
+   border-right: none;
+   background-color: #fff;
+   border-left: solid #006699;
+}
+
+#selected {
+    color: Red
+}

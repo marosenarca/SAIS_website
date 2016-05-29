@@ -1,0 +1,64 @@
+{% extends "management/base.html" %}
+{% load staticfiles %}
+
+{% block tabtitle %}Approval Workflow{% endblock %}
+
+{% block home %}
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="vertical-align: bottom; text-align: center;color:white;font-size:15px;font-weight:300;">SELF SERVICE <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="{% url 'management:student-center' %}" class="dropdown-item">Student Center</a></li>
+    <li><a href="{% url 'management:search-or-browse' %}" class="dropdown-item">Class Search/Browse Catalog</a></li>
+    <li><a href="{% url 'management:campus-finances' %}" class="dropdown-item">Campus Finances</a></li>
+    <li><a href="#">Enrollment</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="{% url 'management:profile' %}">Student Profile</a></li>
+    <li><a href="#">Approval Workflow</a></li>
+  </ul>
+</li>
+{% endblock %}
+
+{% block wayfinder %}
+<div>
+  <table width="100%">
+    <tr>
+      <td width="2%"></td>
+      <td width="48%" align="left"><a href="{% url 'management:index' %}" class="wayfinder">Home</a> > <a href="{% url 'management:approval-workflow' %}" class="wayfinder" id="current">Approval Workflow</a></td>
+      <td width="50%" align="right"><a href="#" class="tool" style="margin-right:15px;">? Help</a></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block sidebar%}
+<ul class="nav">
+  <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+</ul>
+ <ul class="nav hidden-xs" id="lg-menu">
+    <li>
+        <h4 style="color:#2F2727;">Quick Access</h4>
+    </li>
+    <li role="separator" class="divider"></li>
+    <li><a href="{% url 'management:profile' %}" class="dropdown-item">Student Profile</a></li> <!-- name sa student -->
+    <li><a href="{% url 'management:view-grades' %}" id="grades">View Grades</a></li>
+    <li><a href="{% url 'management:class-schedule' %}">View Schedule</a></li>
+    <li><a href="{% url 'management:add-class' %}">Add Class</a></li>
+    <li role="separator" class="divider"></li>
+<!--     <li><a href="{% url 'management:approval-workflow' %}">Approval Workflow</a></li>
+    <li role="separator" class="divider"></li> -->
+</ul>
+<ul class="nav visible-xs" id="lg-menu">
+</ul>
+{% endblock %}
+
+{% block content %}
+<div>
+  <div class="col-md-4">
+     <h1 class="content-title" style="margin-left:20px;">Approval Wokflow</h1>    
+     <p align="justify" style="margin-right:3px;"></p>
+  </div>
+  <div class="col-md-11 col-md-offset-1" style="padding-top:0px;">
+   <h3>  Generic workflow for filing form requests.</h3>
+  </div>
+</div>
+{% endblock %}   

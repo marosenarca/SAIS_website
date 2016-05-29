@@ -1,0 +1,135 @@
+{% extends "management/base.html" %}
+{% load staticfiles %}
+
+{% block tabtitle %}SAIS{% endblock %}
+
+{% block wayfinder %}
+<div>
+  <table width="100%">
+    <tr>
+      <td width="2%"></td>
+      <td width="48%" align="left"><a href="{% url 'management:index' %}" class="wayfinder" id="current">Home</a> > </td>
+      <td width="50%" align="right"><a href="#" class="tool" style="margin-right:15px;">? Help</a></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block sidebar%}
+<ul class="nav">
+  <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+</ul>
+ <ul class="nav hidden-xs" id="lg-menu">
+    <li>
+        <h3 style="color:#2F2727; margin-top:20px; margin-bottom:20px">Quick Access</h3>
+    </li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#" class="dropdown-item btn btn-info btn-lg" data-toggle="modal" data-target="#termSelectModal" style="border:0px; text-align:lef; border-radius:0px;">Student Profile</a></li>
+    <!-- <li><a href="{% url 'management:profile' %}" class="dropdown-item">Student Profile</a></li>  -->
+    <li role="separator" class="divider"></li>
+    <!-- <li><a href="{% url 'management:approval-workflow' %}" class="dropdown-item btn btn-info btn-lg" style="border:0px; text-align:lef; border-radius:0px;">Approval Workflow</a></li> -->
+    <!-- <li role="separator" class="divider"></li> -->
+    <li><a href="{% url 'management:view-grades' %}" id="grades">View Grades</a></li>
+    <li><a href="{% url 'management:class-schedule' %}">View Schedule</a></li>
+    <li><a href="{% url 'management:add-class' %}">Add Class</a></li>
+    <!-- <li role="separator" class="divider"></li> -->
+<!--     <li><a href="{% url 'management:approval-workflow' %}">Approval Workflow</a></li>
+    <li role="separator" class="divider"></li> -->
+</ul>
+<ul class="nav visible-xs" id="lg-menu">
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="termSelectModal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Enrollment Information
+                </h4>
+            </div>
+            
+            <!--Modal Body -->
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+
+                    <div class="col-md-5 col-md-offset-1">
+                        <label><h4>Academic Year</h4>
+                            <select id="open-time">
+                                <option value="null">----------------------</option>
+                                <option value="2015-2016">2015-2016</option>
+                                <option value="2016-2017">2016-2017</option>
+                            </select>
+                        </label>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+
+                    <div class="col-md-5 col-md-offset-1">
+                        <label><h4>Semester</h4>
+                            <select id="open-time">
+                                <option value="null">----------------------</option>
+                                <option value="1">First Semester</option>
+                                <option value="2">Second Semester</option>
+                            </select>
+                        </label>
+                    </div>
+
+                  </div>
+                </form>
+  
+            </div> 
+          
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Cancel
+                </button>
+                <a href="{% url 'management:profile' %}"><button type="button" class="btn btn-primary" id="continue-btn">
+                    Continue
+                </button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div>
+  <div class="col-md-4">
+     <h1 class="content-title" style="margin-left:20px;"> Self Service </h1>    
+     <p align="justify" style="margin-right:3px;"></p>
+  </div>
+  <div class="col-md-11 col-md-offset-1" style="padding-top:0px;">
+   <h3>  Navigate to your self service information and activities.</h3>
+  </div>
+</div>
+<div style="padding-top:150px; margin-left:150px">
+  <!-- <div class="row"> -->
+    <!-- <div class="col-md-4 col-md-offset-2" align="left"><img src="{% static 'management/img/student_center.gif' %}" width="50"><a href="{% url 'management:student-center' %}" class="content-label">Student Center</a></div> -->
+    <div align="left" style="padding-bottom:10px"><img src="{% static 'management/img/student_center.gif' %}" width="50"><a href="{% url 'management:student-center' %}" class="content-label">Student Center</a></div>
+    <div align="left" style="padding-bottom:10px"><img src="{% static 'management/img/folder.gif' %}" width="50"><a href="{% url 'management:search-or-browse' %}" class="content-label">Class Search/Browse Catalog</a></div>
+  <!-- </div> -->
+  <!-- <div style="height:50px;"></div> -->
+  <!-- <div class="row"> -->
+    <div  align="left" style="padding-bottom:10px"><img src="{% static 'management/img/enrollment.gif' %}" width="50"> <a href="{% url 'management:enrollment' %}" class="content-label">Enrollment</a></div>
+    <div align="left" style="padding-bottom:10px"><img src="{% static 'management/img/finances.gif' %}" width="50"><a href="{% url 'management:campus-finances' %}" class="content-label">Campus Finances</a></div>
+    <!-- <div class="col-md-4" align="center"><img src="{% static 'management/img/folder.gif' %}" width="50"><a href="{% url 'management:approval-workflow' %}" class="content-label">Approval Workflow</a></div> -->
+  <!-- </div> -->
+</div>
+{% endblock %}   
