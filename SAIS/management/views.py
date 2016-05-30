@@ -54,7 +54,21 @@ def workflow(request):
 	return render(request, 'management/approval-workflow.html')
 
 def addresses(request):
-	return render(request, 'management/profile/addresses.html')
+	userID = request.user.id
+	studentID = Student.objects.get(SUser=userID).id
+	HousingType = Address.objects.get(StudentID=studentID, AddressType=1).HousingType
+	print HousingType
+	HouseNumber = Address.objects.get(StudentID=studentID, AddressType=1).HouseNumber
+	Brgy = Address.objects.get(StudentID=studentID, AddressType=1).Brgy
+	City = Address.objects.get(StudentID=studentID, AddressType=1).City
+	Landline = Address.objects.get(StudentID=studentID, AddressType=1).Landline
+
+	HousingType2 = Address.objects.get(StudentID=studentID, AddressType=2).HousingType
+	HouseNumber2 = Address.objects.get(StudentID=studentID, AddressType=2).HouseNumber
+	Brgy2 = Address.objects.get(StudentID=studentID, AddressType=2).Brgy
+	City2 = Address.objects.get(StudentID=studentID, AddressType=2).City
+	Landline2 = Address.objects.get(StudentID=studentID, AddressType=2).Landline
+	return render(request, 'management/profile/addresses.html', {'HousingType':HousingType,'HouseNumber':HouseNumber, 'Brgy':Brgy, 'City':City, 'Landline':Landline, 'HousingType2':HousingType2,'HouseNumber2':HouseNumber2, 'Brgy2':Brgy2, 'City2':City2, 'Landline2':Landline2})
 
 
 # def demographicinfo(request):
@@ -64,7 +78,25 @@ def addresses(request):
 # 	return render(request, 'management/profile/personal-info.html')
 
 def emergencycontacts(request):
-	return render(request, 'management/profile/emergency-contacts.html')
+	userID = request.user.id
+	studentID = Student.objects.get(SUser=userID).id
+	father = Parents.objects.get(StudentID=studentID).FatherName
+	fatherOccu = Parents.objects.get(StudentID=studentID).FatherOccu
+	mother = Parents.objects.get(StudentID=studentID).MotherName
+	motherOccu = Parents.objects.get(StudentID=studentID).MotherOccu
+	gName = Guardian.objects.get(StudentID=studentID).Name	
+	gOccu = Guardian.objects.get(StudentID=studentID).Occupation
+	gHouseNumber = Guardian.objects.get(StudentID=studentID).HouseNumber
+	gBrgy = Guardian.objects.get(StudentID=studentID).Barangay
+	gCity =Guardian.objects.get(StudentID=studentID).City
+	gLandline = Guardian.objects.get(StudentID=studentID).Landline
+	sName = SendDocs.objects.get(StudentID=studentID).Name	
+	sOccu = SendDocs.objects.get(StudentID=studentID).Occupation
+	sHouseNumber = SendDocs.objects.get(StudentID=studentID).HouseNumber
+	sBrgy = SendDocs.objects.get(StudentID=studentID).Barangay
+	sCity =SendDocs.objects.get(StudentID=studentID).City
+	sLandline = SendDocs.objects.get(StudentID=studentID).Landline
+	return render(request, 'management/profile/emergency-contacts.html', {'father':father, 'fatherOccu':fatherOccu, 'mother':mother, 'motherOccu': motherOccu, 'gName':gName, 'gOccu':gOccu, 'gHouseNumber':gHouseNumber, 'gBrgy':gBrgy, 'gCity':gCity, 'gLandline':gLandline, 'sName':sName, 'sOccu':sOccu, 'sHouseNumber':sHouseNumber, 'sBrgy':sBrgy, 'sCity':sCity, 'sLandline':sLandline})
 
 def internetaddresses(request):
 	return render(request, 'management/profile/internet-addresses.html')

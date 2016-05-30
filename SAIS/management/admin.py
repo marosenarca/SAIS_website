@@ -23,6 +23,9 @@ class CivilStatusAdmin(admin.ModelAdmin):
 
 '''--------'''
 
+@admin.register(models.StudentType)
+class StudentType(admin.ModelAdmin):
+	list_display = ('id','Desc')
 
 
 @admin.register(models.Subject)
@@ -90,3 +93,29 @@ class SyllabusAdmin(admin.ModelAdmin):
 @admin.register(models.Degree)
 class DegreeAdmin(admin.ModelAdmin):
 	list_display = ('id', 'Name')
+
+@admin.register(models.AddressType)
+class AddressTypeAdmin(admin.ModelAdmin):
+	list_display = ('id', 'Desc')
+
+@admin.register(models.HousingType)
+class HousingTypeAdmin(admin.ModelAdmin):
+	list_display = ('id', 'Desc')
+
+@admin.register(models.Address)
+class AddressAdmin(admin.ModelAdmin):
+	list_display = ('id', 'AddressType', 'HouseNumber', 'Brgy', 'City')
+
+@admin.register(models.Parents)
+class ParentsAdmin(admin.ModelAdmin):
+	list_display = ('id', 'FatherName', 'FatherOccu', 'MotherName', 'MotherOccu')
+
+@admin.register(models.Guardian)
+class GuardianAdmin(admin.ModelAdmin):
+	list_display = ('id', 'Name', 'Occupation', 'HouseNumber', 'Barangay', 'City')
+
+#
+
+@admin.register(models.SendDocs)
+class SendDocsAdmin(admin.ModelAdmin):
+	list_display = ('id', 'Name', 'Occupation', 'HouseNumber', 'Barangay', 'City')

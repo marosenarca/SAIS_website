@@ -132,6 +132,8 @@ class Scholarship(models.Model):
 	Amount = models.FloatField()
 
 
+
+
 class STS(models.Model):
 	BracketName = models.CharField(max_length=10)
 	BracketDesc = models.CharField(max_length=100)
@@ -147,15 +149,48 @@ class ScholarshipStatus(models.Model):
 	Desc = models.CharField(max_length=50) #active, suspended, terminated
 
 class AddressType(models.Model):
-	Desc = models.CharField(max_length=100)
+	Desc = models.CharField(max_length=50)
+
+class HousingType(models.Model):
+	Desc = models.CharField(max_length=50)
+
+	def __str__(self):
+		return self.Desc
 
 class Address(models.Model):
 	StudentID = models.ForeignKey(Student)
 	AddressType = models.ForeignKey(AddressType)
+	HousingType = models.ForeignKey(HousingType)
 	HouseNumber = models.CharField(max_length=10)
 	Brgy = models.CharField(max_length=100)
 	City = models.CharField(max_length=100)
 	Landline = models.CharField(max_length=100)
+
+class Parents(models.Model):
+	StudentID = models.ForeignKey(Student)
+	FatherName = models.CharField(max_length=100)
+	FatherOccu = models.CharField(max_length=100)
+	MotherName = models.CharField(max_length=100)
+	MotherOccu = models.CharField(max_length=100)
+
+class Guardian(models.Model):
+	StudentID = models.ForeignKey(Student)
+	Name = models.CharField(max_length=100)
+	Occupation = models.CharField(max_length=100)
+	HouseNumber = models.CharField(max_length=100)
+	Barangay = models.CharField(max_length=100)
+	City = models.CharField(max_length=100)
+	Landline = models.CharField(max_length=100)
+
+class SendDocs(models.Model):
+	StudentID = models.ForeignKey(Student)
+	Name = models.CharField(max_length=100)
+	Occupation = models.CharField(max_length=100)
+	HouseNumber = models.CharField(max_length=100)
+	Barangay = models.CharField(max_length=100)
+	City = models.CharField(max_length=100)
+	Landline = models.CharField(max_length=100)
+
 
 
 # class UserProfile(models.Model):  
