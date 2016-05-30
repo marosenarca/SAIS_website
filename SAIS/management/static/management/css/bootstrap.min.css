@@ -491,3 +491,11 @@ user agent stylesheet
     right: 30px;
     color: red; 
 }
+
+tr {
+	background-color: white;
+}
+
+#rowhead {
+	background-color: #FAEBEB !important;
+}
