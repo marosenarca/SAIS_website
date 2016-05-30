@@ -167,6 +167,9 @@ def financialaids(request):
 def paymentplan(request):
 	return render(request, 'management/campus-finances/payment-plan.html')
 
+def stepone(request):
+	return render(request, 'management/enrollment/add-class-step/step-one.html')
+
 def steptwo(request):
 	return render(request, 'management/enrollment/add-class-step/step-two.html')
 

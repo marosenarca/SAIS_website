@@ -31,6 +31,7 @@ urlpatterns = [
 	url(r'^search-or-browse/browse-courses$',views.browsecourse, name='browse-courses'),
 	url(r'^enrollment/enrollment-schedule$',views.enrollmentsched, name='enrollment-schedule'),
 	url(r'^enrollment/add-class$',views.addclass, name='add-class'),
+	url(r'^enrollment/add-class/step-one$',views.stepone, name='add-class-one'),
 	url(r'^enrollment/add-class/step-two$',views.steptwo, name='add-class-two'),
 	url(r'^enrollment/add-class/step-three$',views.stepthree, name='add-class-three'),
 	url(r'^enrollment/drop-class$',views.dropclass, name='drop-class'),
