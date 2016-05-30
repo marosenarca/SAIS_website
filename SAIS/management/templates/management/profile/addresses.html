@@ -47,13 +47,13 @@
 	           			<div class="form-group" style="padding-left:20px; padding-top:10px;">
 	           			  <select id="open-time">
 	                          <option value="null">-------------------------------</option>
-	                          <option value="Apartment">Apartment</option>
-	                          <option value="BHouse onclick="	" ff Campus">Boarding House Off Campus</option>
-	                          <option value="BHouse On Campus">Boarding House On Campus</option>
-	                          <option value="Hotel">Hotel</option>
-	                          <option value="Relative's House">Relative's House</option>
-	                          <option value="U.P. Dormitory">U.P. Dormitory</option>
-	                          <option value="U.P. Staff House">U.P. Staff House</option>
+	                          <option value="Apartment" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">Apartment</option>
+	                          <option value="BHouse Off Campus" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">Boarding House Off Campus</option>
+	                          <option value="BHouse On Campus" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">Boarding House On Campus</option>
+	                          <option value="Hotel" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">Hotel</option>
+	                          <option value="Relative's House" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">Relative's House</option>
+	                          <option value="U.P. Dormitory" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">U.P. Dormitory</option>
+	                          <option value="U.P. Staff House" selected="{% if HousingType == this.value %}{{ True }}{% endif %}">U.P. Staff House</option>
 	                      </select>
                       </div>
 	           		</td>
@@ -61,25 +61,25 @@
 	           	<tr>
 	           		<td><label>House Number: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{ HouseNumber }}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>Barangay/Subdivision: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{Brgy}}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>City/Municipality: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{City}}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>Landline/Mobile Phone Number : </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{Landline}}">
 			        </div></td>
 	           	</tr>
 	           </table>
@@ -107,8 +107,8 @@
 	           			<div class="form-group" style="padding-left:20px; padding-top:10px;">
 	           			  <select id="open-time">
 	                          <option value="null">-------------------------------</option>
-	                          <option value="Apartment">Apartment</option>
-	                          <option value="BHouse onclick="	" ff Campus">Boarding House Off Campus</option>
+	                          <option value="Apartment" selected="{% if HousingType2 == this.value %}{{ True }}{% endif %}">Apartment</option>
+	                          <option value="BHouse Off Campus" selected="{% if HousingType2 == this.value %}{{ True }}{% endif %}">Boarding House Off Campus</option>
 	                          <option value="BHouse On Campus">Boarding House On Campus</option>
 	                          <option value="Hotel">Hotel</option>
 	                          <option value="Relative's House">Relative's House</option>
@@ -121,25 +121,25 @@
 	           	<tr>
 	           		<td><label>House Number: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{ HouseNumber2 }}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>Barangay/Subdivision: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{ Brgy2 }}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>City/Municipality: </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{ City2 }}">
 			        </div></td>
 	           	</tr>
 	           	<tr>
 	           		<td><label>Landline/Mobile Phone Number : </label> </td>
 	           		<td><div class="form-group" style="padding-left:20px; padding-top:10px;">
-			          <input type="text" class="form-control">
+			          <input type="text" class="form-control" value="{{ Landline2 }}">
 			        </div></td>
 	           	</tr>
 	           </table>
