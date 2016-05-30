@@ -485,6 +485,9 @@ user agent stylesheet
 	color: #800000;
 }
 
-#continue-btn {
-	
+#fixedbutton {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    color: red; 
 }
