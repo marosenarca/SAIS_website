@@ -176,4 +176,14 @@ def steptwo(request):
 def stepthree(request):
 	return render(request, 'management/enrollment/add-class-step/step-three.html')
 
+def removeone(request):
+	return render(request, 'management/enrollment/remove-class-step/drop-step-one.html')
+
+def removetwo(request):
+	return render(request, 'management/enrollment/remove-class-step/drop-step-two.html')
+
+def removethree(request):
+	return render(request, 'management/enrollment/remove-class-step/drop-step-three.html')
+
+
 

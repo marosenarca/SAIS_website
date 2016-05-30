@@ -18,13 +18,13 @@
 {% block title %}Drop Class{% endblock %}
 
 {% block body %}
-<h4>
-<ul>
-	<li>Drop classes from your schedule.</li>
-</ul>
-</h4>
+
+{% block step %} 
+	<a href="{% url 'management:drop-class-one' %}">click me to remove class</a>
+{% endblock %}
+
 <script type="text/javascript">
-	$('#lg-menu').children().eq(4).addClass('sActive');
+	$('#lg-menu').children().eq(3).addClass('sActive');
 </script>
 {% endblock %}
 
