@@ -492,7 +492,7 @@ user agent stylesheet
     color: red; 
 }
 
-tr {
+.tr {
 	background-color: white;
 }
 
