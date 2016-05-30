@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content = "width=device-width, initial-scale=1.0">
+	{% load staticfiles %}	
+	<title>{% block tabtitle %}Log-in{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'management/css/bootstrap.min.css' %}">
+	<script type="text/javascript" src="{% static 'management/js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'management/js/bootstrap.js' %}"></script>
+	{%block stylesheets%} 
+		<link rel="stylesheet" type="text/css" href="{% static 'management/css/mystyle.css' %}">
+	{% endblock %}
+</head>
+<body>
+	<center>
+		<table width="100%" rules="none" cellpadding="10">
+			<tr align="center" id = "headerbg">
+				<td width="150" align="center">
+					<img src="{% static 'management/img/UP.png' %}" width="70%">
+				</td>
+				<td align="center">
+					<span class = "header">
+						<h3 class="log-in-header">
+							WELCOME TO THE STUDENT ACADEMIC INFORMATION SYSTEM
+						</h3>
+					</span>
+				</td>
+			</tr>
+		</table>
+		<p style="line-height: 200%;">
+			
+		</p>
+		<table style="width: 100%" border="0">
+			<tbody>
+				<tr>
+					<td align="center">
+						<img align="center" src="{% static 'management/img/people-img.png' %}">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<table width="300">
+			<tr>
+				<td>
+					successfully updated profile
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>
